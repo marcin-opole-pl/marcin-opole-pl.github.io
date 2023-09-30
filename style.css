@@ -349,6 +349,7 @@ body{
     width: 100%;
     padding-top: var(--nav-bar-height);
     font-family: var(--nav-font-family);
+    padding-bottom: 50px;
 }
 
 #contact{
@@ -356,23 +357,53 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
+    height: 30px;
 }
 
 .contacts{
-    height: 30px;
+    height: 100%;
     text-decoration: none;
     color: var(--font-color2);
     font-size: var(--medium-font-size);
     padding: 50px;
 }
 
-#contact img{
-    width: 50px;
-}
+.contacts a{
+    text-decoration: none;
+    color: var(--font-color2);
+    font-size: var(--medium-font-size);}
 
 .contacts:hover{
     background-color: var(--background-color14);
     color: var(--font-color1);
+}
+
+.contacts.email{
+    height: 100%;
+    background-color: var(--background-color1);
+    border: 0px;
+}
+
+.contacts.email:hover{
+    background-image: url('mail.png');
+    background-color: transparent;
+    color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contacts.tel{
+    height: 100%;
+    background-color: var(--background-color1);
+    border: 0px;
+}
+
+.contacts.tel:hover{
+    background-image: url('tel.png');
+    background-color: transparent;
+    color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .contacts span{
